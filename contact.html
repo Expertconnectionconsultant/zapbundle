@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Zap Bundle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="https://thumbs.dreamstime.com/b/zap-letter-logo-design-black-background-zap-creative-initials-letter-logo-concept-zap-letter-design-zap-letter-logo-design-243046108.jpg"
+                    alt="Zap Bundle Logo" class="logo-img">
+                <span class="logo-text">Zap Bundle</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="page-title animate-fade-up">Contact Us</h1>
+                <p class="page-subtitle animate-fade-up-delay">Get in touch with our team for support, sales, or general inquiries</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-content">
+                <div class="form-info animate-slide-left">
+                    <h2 class="form-title">Send Us a Message</h2>
+                    <p class="form-description">Have a question or need assistance? Fill out the form below and our team will get back to you as soon as possible.</p>
+                    
+                    <div class="contact-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Quick Response Time</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Expert Support Team</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure & Confidential</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form animate-slide-right">
+                    <form id="contactForm" class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="new-service">New Service Inquiry</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="complaint">Service Complaint</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service-type" class="form-label">Service Interest</label>
+                            <select id="service-type" name="service-type" class="form-select">
+                                <option value="">Select service type</option>
+                                <option value="internet-only">Internet Only</option>
+                                <option value="tv-only">TV Only</option>
+                                <option value="bundle">Internet + TV Bundle</option>
+                                <option value="business">Business Services</option>
+                                <option value="mobile">Mobile Services</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address" class="form-label">Service Address</label>
+                            <input type="text" id="address" name="address" class="form-input" placeholder="Enter your service address">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Please provide details about your inquiry..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                <span class="checkmark"></span>
+                                I would like to receive updates and promotional offers via email
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Hours -->
+    <section class="support-hours">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Support Hours</h2>
+                <p class="section-subtitle">We're here to help when you need us most</p>
+            </div>
+            <div class="hours-grid">
+                <div class="hours-card animate-fade-up">
+                    <div class="hours-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="hours-title">Customer Support</h3>
+                    <div class="hours-info">
+                        <p><strong>24/7 Phone Support</strong></p>
+                        <p>Monday - Sunday: Available anytime</p>
+                        <p><strong>Live Chat</strong></p>
+                        <p>24/7 online assistance</p>
+                    </div>
+                </div>
+                <div class="hours-card animate-fade-up-delay">
+                    <div class="hours-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="hours-title">Sales Team</h3>
+                    <div class="hours-info">
+                        <p><strong>Phone Sales</strong></p>
+                        <p>Monday - Friday: 8AM - 8PM PST</p>
+                        <p>Saturday - Sunday: 9AM - 6PM PST</p>
+                        <p><strong>Online Orders</strong></p>
+                        <p>24/7 availability</p>
+                    </div>
+                </div>
+                <div class="hours-card animate-fade-up-delay-2">
+                    <div class="hours-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="hours-title">Technical Service</h3>
+                    <div class="hours-info">
+                        <p><strong>Installation & Repairs</strong></p>
+                        <p>Monday - Saturday: 8AM - 6PM</p>
+                        <p><strong>Emergency Service</strong></p>
+                        <p>24/7 for critical issues</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to common questions</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I check service availability in my area?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can check service availability by calling our sales team at (888) 552-6525 or using our online availability checker on our website. Simply enter your address, and we'll let you know what services are available in your area.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What do I need for installation?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our professional technicians will bring all necessary equipment. You just need to be present during the scheduled installation window and ensure access to the areas where equipment will be installed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I pay my bill?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can pay your bill online through our customer portal, by phone at (888) 552-6526, by mail, or set up automatic payments from your bank account or credit card.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if I'm experiencing technical issues?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Contact our 24/7 technical support team at (888) 552-6526. Our experts can often resolve issues remotely, or we'll schedule a technician visit if needed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Find Our Locations</h2>
+                <p class="section-subtitle">Visit one of our service centers for in-person assistance</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Service Center Locations</h3>
+                        <p>We have service centers across the country. Contact us to find the nearest location to you.</p>
+                        <a href="tel:+18885526525" class="btn btn-primary">Find Nearest Location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Get Connected?</h2>
+                <p class="cta-description">Don't wait - call us now to get started with fast, reliable service</p>
+                <div class="cta-buttons">
+                    <a href="tel:+18885526525" class="btn btn-primary">Call Now: (888) 552-6525</a>
+                    <a href="pricing.html" class="btn btn-outline">View Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://thumbs.dreamstime.com/b/zap-letter-logo-design-black-background-zap-creative-initials-letter-logo-concept-zap-letter-design-zap-letter-logo-design-243046108.jpg"
+                            alt="Zap Bundle">
+                        <span>Zap Bundle</span>
+                    </div>
+                    <p class="footer-description">Delivering lightning-fast internet and premium cable services to homes
+                        and businesses nationwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Our Plans</h4>
+                    <ul class="footer-links">
+                        <li><a href="pricing.html">Internet Plans</a></li>
+                        <li><a href="pricing.html">TV Packages</a></li>
+                        <li><a href="pricing.html">Bundle Deals</a></li>
+                        <li><a href="pricing.html">Business Plans</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+18885526525">Call Us</a></li>
+                        <li><a href="contact.html">Technical Support</a></li>
+                        <li><a href="contact.html">Installation</a></li>
+                        <li><a href="contact.html">Billing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zap Bundle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>
