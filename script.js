@@ -122,7 +122,8 @@ function initCounterAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-count'));
+                // Check for both data-count and data-target attributes
+                const target = parseInt(counter.getAttribute('data-count') || counter.getAttribute('data-target'));
                 animateCounter(counter, target);
                 counterObserver.unobserve(counter);
             }
