@@ -122,7 +122,7 @@ function initCounterAnimations() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-target'));
+                const target = parseInt(counter.getAttribute('data-count'));
                 animateCounter(counter, target);
                 counterObserver.unobserve(counter);
             }
@@ -142,12 +142,22 @@ function animateCounter(element, target) {
         current += increment;
         
         if (current >= target) {
-            element.textContent = target;
+            element.textContent = formatNumber(target);
             clearInterval(timer);
         } else {
-            element.textContent = Math.floor(current);
+            element.textContent = formatNumber(Math.floor(current));
         }
     }, 16);
+}
+
+function formatNumber(num) {
+    if (num >= 1000000) {
+        return (num / 1000000).toFixed(1).replace('.0', '') + 'M+';
+    } else if (num >= 1000) {
+        return (num / 1000).toFixed(0) + 'K+';
+    } else {
+        return num.toString() + '+';
+    }
 }
 
 // Testimonials slider
